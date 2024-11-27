@@ -2,8 +2,8 @@
   <header class="modern">
     <div class="header-container">
       <div class="text">
-        <h1>Networking Project</h1>
-        <p>Networking can be fun</p>
+        <h1>Project Webpage</h1>
+        <p>Computer Networks are cool</p>
       </div>
     </div>
   </header>
@@ -38,7 +38,7 @@
 
   .text{
     flex-direction:column;
-    padding-left:20px;
+    padding-left:50px;
     color:#263238;
   }
   .text h1{
