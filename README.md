@@ -1,0 +1,1 @@
+This was a project to serve and create a basic Webapp on a Rasberry Pi that when connected to a router, is avaible to view on all devices on the network. Port Forwarding waa also configured and tested on a router to view the webapp on outside networks.
