@@ -1,9 +1,9 @@
 <template>
   <header>
-    <a href="#" class="logo">Jaden</a>
+    <a href="#" class="logo"></a>
     <nav>
-        <a href="#" class="active">Home</a>
-        <a href="#">Skills</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#skill" >Skills</a>
         <a href="#">Education</a>
         <a href="#">Experience</a>
     </nav>
@@ -17,5 +17,7 @@
   </script>
  
   <style scoped>
-  @import "../assets/style.css";
+  .scroll{
+    scroll-behavior: smooth;
+  }
   </style>

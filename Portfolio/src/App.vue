@@ -5,7 +5,7 @@
   <AppHeader/>
 
   <body>
-    <section class="home">
+    <section id='home' class="home">
         <div class="home-img">
             <img src="./assets/image.png" alt="">
         </div>
@@ -24,7 +24,9 @@
         </div>
     </section>
 
-    <SkillPage/>
+    <section id="skill">
+      <SkillPage/>
+    </section>
     <!-- <EducationPage/> -->
     <!-- <ExperiencePage/> -->
   </body>
