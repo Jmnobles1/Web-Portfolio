@@ -10,7 +10,7 @@
 }
 
 html{
-    font-size: 50%;
+    font-size: 55%;
 }
 
 p{
@@ -20,27 +20,28 @@ p{
 body{
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: #1a1a1a;
     color: white;
 }
 
 header{
-    margin-top: 20px;
-    position: fixed;
     top: 0;
-    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 100;
+    margin-top: 20px;
+    position: sticky;
     width: 100%;
     padding: 1rem 9%;
-    background-color: black;
     filter: drop-shadow(10px);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    z-index: 100;
 }
 
 .logo{
-    color: green;
+    color: gray;
     font-size: 3rem;
     font-weight: 800;
     cursor: pointer;
@@ -62,8 +63,8 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: green;
-    border-bottom: 3px solid green;
+    color: lightgreen;
+    border-bottom: 3px solid gray;
 }
 
 
@@ -79,7 +80,7 @@ section{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-    background-color: black;
+    background-color: #1a1a1a;
 }
 
 .home .home-content h1{
@@ -89,7 +90,7 @@ section{
 }
 
 span{
-    color: green;
+    color: gray;
 }
 
 .home-content h3{
@@ -116,26 +117,37 @@ span{
     font-weight: 500;
 }
 
-.social-icons a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background-color: transparent;
-    border: 0.2rem solid green;
-    font-size: 2rem;
-    border-radius: 50%;
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-    color: green;
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 1rem;
 }
 
-.social-icons a:hover{
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    border: 2px solid gray;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+    color: lightgreen;
+    text-decoration: none;
+}
+
+.social-icons a i {
+    font-size: 1.8rem;
+}
+
+.social-icons a:hover {
+    background-color: lightgreen;
     color: black;
-    transform: scale(1.3) translateY(-5px);
-    background-color: green;
-    box-shadow: 0 0 25px green;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px lightgreen;
 }
 
 .typing-text{
@@ -149,21 +161,15 @@ span{
 }
 
 .typing-text span::before{
-    content: " Software Developer";
-    color: green;
+    content: "FullStack Software Developer";
+    color: lightgreen;
 }
 
 
-@media (max-width:1000px){
-    .home{
-        gap: 4rem;
-    }
-}
-
-@media (max-width:995px){
+@media (max-width:768px){
     .home{
         flex-direction: column;
-        margin: 5rem 4rem;
+        margin: 4rem 4rem;
     }
 
     .home .home-content h3{

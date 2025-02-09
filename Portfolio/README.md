@@ -1,4 +1,4 @@
-# my-vue-app
+# my-portfolio
 
 ## Project setup
 ```
