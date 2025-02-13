@@ -13,21 +13,37 @@
 export default {
   name: 'AppHeader',
   mounted() {
-    // Handle smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-
+        
         if (targetElement) {
-          window.scrollTo({
-            top: targetElement.offsetTop - 20, // Adjust for header offset
-            behavior: 'smooth'
-          });
+          slowScroll(targetElement.offsetTop - 20, 450);
         }
       });
     });
+
+    function slowScroll(targetPosition, duration) {
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1); // Easing effect
+
+        window.scrollTo(0, startPosition + distance * progress);
+
+        if (timeElapsed < duration) {
+          requestAnimationFrame(animation);
+        }
+      }
+
+      requestAnimationFrame(animation);
+    }
   }
 };
 </script>

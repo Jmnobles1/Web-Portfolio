@@ -77,17 +77,15 @@ export default {
 </script>
 
 <style scoped>
-/* Styles for the Skills Section */
 .skills-container {
   text-align: center;
-  padding: 4rem 2rem;
 }
 
 .page-title {
   font-size: 4rem;
   font-weight: 700;
   color: lightgreen;
-  margin-bottom: 2rem;
+  margin-bottom: 50px;
 }
 
 .skills-grid {
@@ -97,7 +95,7 @@ export default {
 }
 
 .category {
-  text-align: left;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
@@ -107,15 +105,13 @@ h3 {
   margin-bottom: 1rem;
 }
 
-/* Skill Rows */
 .skills-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 1rem;
+  justify-content: center;
 }
 
-/* Skill Cards */
 .skill-card {
   display: flex;
   flex-direction: column;
@@ -124,19 +120,17 @@ h3 {
   padding: 1rem;
   border-radius: 10px;
   cursor: pointer;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
 }
 
-/* Icon Styles */
 .skill-card i {
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-/* Skill Name */
 .skill-card p {
   font-size: 1rem;
   color: white;
@@ -144,7 +138,6 @@ h3 {
   text-align: center;
 }
 
-/* Hover Effects */
 .skill-card:hover {
   transform: scale(1.1);
   background: lightgreen;
@@ -155,27 +148,30 @@ h3 {
   color: black;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .skills-row {
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    gap: 0.5rem;
+    justify-content: center;
   }
 
   .skill-card {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
 }
 
 @media (max-width: 480px) {
   .skills-row {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
   }
 
   .skill-card {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
   }
 }
 </style>
