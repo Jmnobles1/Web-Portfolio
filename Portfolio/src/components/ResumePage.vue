@@ -27,7 +27,7 @@ export default {
   name: "ResumePage",
   methods: {
     openResume() {
-      window.open("/Resume.pdf", "_blank");
+      window.open(process.env.BASE_URL + "/Resume.pdf", "_blank");
     }
   }
 };
