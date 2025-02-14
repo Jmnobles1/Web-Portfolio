@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router'; // Changed from createWebHistory
 import HomePage from './components/HomePage.vue';
 import ResumePage from './components/ResumePage.vue';
 
@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(), // Changed from createWebHistory
   routes,
   scrollBehavior(to) {
     if (to.name === 'Resume') {
