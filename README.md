@@ -1,24 +1,31 @@
-# my-portfolio
+# Web Portfolio
 
-## Project setup
-```
-npm install
-```
+web application representing my portfolio / resume
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 🛠 Tech Stack
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Frontend
+- Vue
+- JavaScript
+- HTML
+- CSS
+- 
 
-### Lints and fixes files
-```
-npm run lint
-```
+## 🚀 Getting Started
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Local Setup
+
+if you already have cloned the repository,
+
+1) Install dependencies: `npm install` in the project root directory.
+
+### Running the Development Servers
+
+You can run the server using: `npm run serve`
+
+
+
+## 🔧 Available Scripts
+- `npm run serve` - Runs app in development mode
+- `npm run build` - compiles code for production
+- `npm run lint` - Lints and fixes files
