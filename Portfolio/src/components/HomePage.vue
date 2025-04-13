@@ -1,35 +1,48 @@
 <template>
+  <div class="page-layout">
     <AppHeader/>
+    
+
+    <div class="main-content">
+
+      <!--
+      <section id="about">
+        <AboutPage/>
+      </section>
+      -->
+
+      <!--
+      <section id="education">
+        <EducationPage/>
+      </section>
+      -->
+
+      <section id="experience">
+        <ExperiencePage/>
+      </section>
+
+      <section id="skill">
+        <SkillPage/>
+      </section>
+
+      <!--
+      <section id="experience">
+        <CoursePage/>
+      </section>
+      -->
+
+      <!--
+      <section id="contact">
+        <ContactPage/>
+      </section>
+      -->
+
+
+    </div>
+  </div>
+</template>
   
-    <section id='home' class="home">
-      <div class="home-img">
-        <img src="../assets/image.png" alt="">
-      </div>
-      <div class="home-content">
-        <h1><span> Jaden Nobles </span></h1>
-        <h3 class="typing-text">A <span></span></h3>
-        <p>I am a Senior Computer Science student attending NC A&T State University 
-          and a current Software Engineering intern at State Farm. I have a deep passion and interest in
-          web development, software engineering, and AI & Machine Learning. I am eager to continue learning
-          more in the world of technology and currently working toward more opportunities and continued growth in the field.
-        </p>
-        <div class="social-icons">
-          <a href="https://www.linkedin.com/in/jadennobles/" target="_blank">Linkedin <i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/Jmnobles1" target="_blank">GitHub<i class="fa-brands fa-github"></i></a>
-          <a href="mailto:jmnobles1@aggies.ncat.edu">Email<i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-    </section>
-  
-    <section id="skill">
-      <SkillPage/>
-    </section>
-    <section id="experience">
-      <ExperiencePage/>
-    </section>
-  </template>
-  
-  <script>
+<script>
   import AppHeader from '../component/AppHeader.vue';
 import ExperiencePage from './ExperiencePage.vue';
 import SkillPage from './SkillPage.vue';
@@ -40,11 +53,43 @@ import SkillPage from './SkillPage.vue';
       AppHeader,
       SkillPage,
       ExperiencePage,
-    }
+      //EducationPage,
+      //AboutPage,
+      //CoursePage,
+      //ContactPage
+    },
   }
-  </script>
+</script>
   
   <style>
   @import "../assets/style.css";
+
+  .page-layout{
+    display:flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .main-content{
+    flex:1;
+    padding: 20px;
+    margin-left: 250px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width:768px){
+
+    .page-layout{
+      display:flex;
+      flex-direction: column;
+    }
+
+    .main-content{
+      padding: 20px;
+      margin-left: 0;
+      margin-top: 50px;
+    }
+}
+
   </style>
   
