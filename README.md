@@ -1,6 +1,7 @@
 # Web Portfolio
 
 web application representing my portfolio / resume
+- Site: https://jmnobles1.github.io/Web-Portfolio/
 
 ## 🛠 Tech Stack
 
@@ -9,7 +10,6 @@ web application representing my portfolio / resume
 - JavaScript
 - HTML
 - CSS
-- 
 
 ## 🚀 Getting Started
 
