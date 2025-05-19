@@ -1,12 +1,12 @@
 <template>
-  <div class="experience">
-    <div class="header">Experience</div>
+  <div class="courses">
+    <div class="header">Relevant Courses</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "ExperiencePage",
+  name: "CoursePage",
   data() {
     return {
     }
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style scoped>
-.experience {
+.courses {
   max-width:100%;
   display: flex;
   align-items: flex-start;

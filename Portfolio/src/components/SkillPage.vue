@@ -1,6 +1,6 @@
 <template>
   <div class="skills-container">
-    <h1 class="page-title">Skills</h1>
+    <div class="header">Skills</div>
 
     <div class="skills-grid">
       <!-- FrontEnd Section -->
@@ -46,18 +46,13 @@ export default {
     return {
       FrontEnd: [
         { name: "Vue.js", icon: "devicon-vuejs-plain colored" },
-        { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-        { name: "TypeScript", icon: "devicon-typescript-plain colored" },
+        { name: "React.js", icon: "devicon-react-original colored" },
         { name: "Bootstrap", icon: "devicon-bootstrap-plain colored" },
-        { name: "HTML", icon: "devicon-html5-plain colored" },
-        { name: "CSS", icon: "devicon-css3-plain colored" },
       ],
       BackEnd: [
         { name: "Node.js", icon: "devicon-nodejs-plain colored" },
         { name: "Express.js", icon: "devicon-express-original colored" },
-        { name: "Next.js", icon: "devicon-nextjs-plain" },
         { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-        { name: "TypeScript", icon: "devicon-typescript-plain colored" },
         { name: "Insomnia", icon: "devicon-insomnia-plain colored" },
         { name: "PostgreSQL", icon: "devicon-postgresql-plain colored" },
         { name: "Docker", icon: "devicon-docker-plain colored" },
@@ -65,11 +60,12 @@ export default {
       ],
       Tools: [
         { name: "GitHub", icon: "devicon-github-original colored" },
-        { name: "NPM", icon: "devicon-npm-original-wordmark colored" },
+        { name: "Git", icon: "devicon-git-plain colored" },
+        { name: "HTML5", icon: "devicon-html5-plain colored" },
+        { name: "CSS3", icon: "devicon-css3-plain colored" },
         { name: "AWS", icon: "devicon-amazonwebservices-plain-wordmark colored" },
         { name: "VS Code", icon: "devicon-vscode-plain colored" },
         { name: "ROSA (Red Hat)", icon: "devicon-redhat-plain colored" },
-        { name: "GitLab", icon: "devicon-gitlab-plain colored" },
       ],
     };
   },
@@ -78,14 +74,37 @@ export default {
 
 <style scoped>
 .skills-container {
-  text-align: center;
+  max-width:100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
+  color:black;
+  padding-top: 1px;
+  box-sizing: border-box;
 }
 
-.page-title {
-  font-size: 4rem;
-  font-weight: 700;
-  color: lightgreen;
-  margin-bottom: 50px;
+.header {
+position: relative;
+font-size: clamp(25px, 2vw, 40px);
+font-weight: 600;
+width: 100%;
+color: #1d2b9f;
+margin-bottom: 30px;
+padding-bottom: 10px;
+}
+
+.header::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 2px;
+width: 100%;
+background: linear-gradient(to right, #1d2b9f, transparent);
+opacity: 0.5;
 }
 
 .skills-grid {
@@ -116,7 +135,8 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #2d2d2d;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   border-radius: 10px;
   cursor: pointer;
@@ -133,22 +153,17 @@ h3 {
 
 .skill-card p {
   font-size: 1rem;
-  color: white;
+  color: black;
   font-weight: 500;
   text-align: center;
 }
 
 .skill-card:hover {
-  transform: scale(1.1);
-  background: lightgreen;
-  box-shadow: 0 0 10px lightgreen;
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.skill-card:hover p {
-  color: black;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 896px) {
   .skills-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));

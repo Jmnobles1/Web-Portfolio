@@ -72,7 +72,7 @@ nav a.active{
 
 section{
     min-height: 100vh;
-    padding: 5rem 9% 5rem;
+    padding: 50px 3% 80px;
 }
 
 .home{
@@ -180,6 +180,9 @@ span{
     .home{
         flex-direction: column;
         margin: 4rem 4rem;
+    }
+    section{
+        padding: 30px 4% 40px;
     }
 
     .home .home-content h3{

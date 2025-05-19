@@ -8,8 +8,9 @@
       <h1 :class="{active: setSelected === 'about'}"><a @click="navigateTo('about')"><i class="fa-solid fa-house"></i> ABOUT</a></h1>
       <h1 :class="{active: setSelected === 'education'}"><a @click="navigateTo('education')"><i class="fa-solid fa-user-graduate"></i> EDUCATION</a></h1>
       <h1 :class="{active: setSelected === 'experience'}"><a @click="navigateTo('experience')"><i class="fa-solid fa-toolbox"></i> EXPERIENCE</a></h1>
-      <h1 :class="{active: setSelected === 'skill'}"><a @click="navigateTo('skill')"><i class="fa-solid fa-code"></i> SKILLS</a></h1>
-      <h1 :class="{active: setSelected === 'courses'}"><a @click="navigateTo('courses')"><i class="fa-solid fa-book"></i> COURSES TAKEN</a></h1>
+      <h1 :class="{active: setSelected === 'projects'}"><a @click="navigateTo('projects')"><i class="fa-solid fa-diagram-project"></i> PROJECTS</a></h1>
+      <h1 :class="{active: setSelected === 'skills'}"><a @click="navigateTo('skills')"><i class="fa-solid fa-code"></i> SKILLS</a></h1>
+      <h1 :class="{active: setSelected === 'courses'}"><a @click="navigateTo('courses')"><i class="fa-solid fa-book"></i> COURSES</a></h1>
       <h1 :class="{active: setSelected === 'contact'}"><a @click="navigateTo('contact')"><i class="fa-solid fa-phone"></i> CONTACT</a></h1>
     </div>
 
@@ -23,10 +24,11 @@
         <a :class="{active: setSelected === 'about'}" @click="navigateTo('about')"><i class="fa-solid fa-house"></i> ABOUT</a>
         <a :class="{active: setSelected === 'education'}" @click="navigateTo('education')"><i class="fa-solid fa-user-graduate"></i> EDUCATION</a>
         <a :class="{active: setSelected === 'experience'}" @click="navigateTo('experience')"><i class="fa-solid fa-toolbox"></i> EXPERIENCE</a>
+        <a :class="{active: setSelected === 'projects'}" @click="navigateTo('projects')"><i class="fa-solid fa-diagram-project"></i> PROJECTS</a>
         <a :class="{active: setSelected === 'skills'}" @click="navigateTo('skills')"><i class="fa-solid fa-code"></i> SKILLS</a>
-        <a :class="{active: setSelected === 'courses'}" @click="navigateTo('courses')"><i class="fa-solid fa-book"></i> COURSES TAKEN</a>
+        <a :class="{active: setSelected === 'courses'}" @click="navigateTo('courses')"><i class="fa-solid fa-book"></i> COURSES</a>
         <a :class="{active: setSelected === 'contact'}" @click="navigateTo('contact')"><i class="fa-solid fa-phone"></i> CONTACT</a>
-        <router-link to="/resume">Resume</router-link>
+
       </div>
     </div>
   </div>
@@ -145,7 +147,7 @@ button {
 }
 
 /* ===== MOBILE STYLES ===== */
-@media (max-width: 768px) {
+@media (max-width: 896px) {
   .links{
     display: none;
   }
