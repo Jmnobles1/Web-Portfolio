@@ -21,7 +21,7 @@
         </div>
         <div class="skill-buttons">
           <div class="repo" v-for="(button, index) in experience.buttons" :key="index">
-            <a :href="experience.links[index]" download target="_blank">
+            <a :href="experience.links[index]" target="_blank">
               <span id="source"><i :class="experience.icons[index]"></i> {{button}}</span>
             </a>
           </div>
