@@ -42,8 +42,8 @@ export default {
           image: require("../assets/guardian.png"),links:["https://github.com/NCAT-CTRL-ALT-DELETE/Vulnerability-Game","https://www.cg6n.xyz/"]
         },
         { project: "Danger Room", skills: ["C#","Game Design","Game Physics","UI Design","Unity Engine"], buttons: ["Install Game"], icons: ["fas fa-download"],
-          description: "Danger Room is a 3D third-person platformer where players navigate five challenging levels filled with traps and moving platforms. The goal is to reach the end with the fewest deaths while collecting hidden coins. Built in Unity with C#, the game features responsive movement, checkpoint respawns, and uses colliders, rigidbody physics, and the Input System for smooth player interaction. (Once the folder is installed, open the 'Danger Room (Unity Game)' folder and run the 'Danger Room.exe' file to play the game.)",
-          image: require("../assets/danger.png"),links:["/downloads/Danger_Room.zip"]
+          description: "Danger Room is a 3D third-person platformer where players navigate five challenging levels filled with traps and moving platforms. The goal is to reach the end with the fewest deaths while collecting hidden coins. Built in Unity with C#, the game features responsive movement, checkpoint respawns, and uses colliders, rigidbody physics, and the Input System for smooth player interaction. (Once the folder is accessed, open the 'Danger Room (Unity Game)' folder within the 'Danger_Room' folder and run the 'Danger Room.exe' file to play the game.)",
+          image: require("../assets/danger.png"),links:["https://drive.google.com/drive/folders/1OyKv_1TTrhwiL_0D9OdNSRnQbsd-PIfC?usp=drive_link"]
         },
       ],
     }
