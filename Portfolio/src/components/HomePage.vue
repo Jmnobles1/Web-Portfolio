@@ -24,14 +24,6 @@
         <SkillPage/>
       </section>
 
-      <section id="courses">
-        <CoursePage/>
-      </section>
-
-      <section id="contact">
-        <ContactPage/>
-      </section>
-
       <footer class="footer">
         Copyrights &copy; <span style="color:#1d2b9f">Jaden Nobles</span> / Last updated 2025
       </footer>
@@ -42,8 +34,6 @@
 <script>
 import AppHeader from '../component/AppHeader.vue';
 import AboutPage from './AboutPage.vue';
-import ContactPage from './ContactPage.vue';
-import CoursePage from './CoursePage.vue';
 import EducationPage from './EducationPage.vue';
 import ExperiencePage from './ExperiencePage.vue';
 import ProjectPage from './ProjectPage.vue';
@@ -58,8 +48,6 @@ import SkillPage from './SkillPage.vue';
       EducationPage,
       ProjectPage,
       AboutPage,
-      CoursePage,
-      ContactPage
     },
   }
 </script>
@@ -88,13 +76,6 @@ import SkillPage from './SkillPage.vue';
     border-bottom: 1px solid #e0e0e0;
   }
   section#skills{
-    border-bottom: 1px solid #e0e0e0;
-    background-color: #f5f5f5;
-  }
-  section#courses{
-    border-bottom: 1px solid #e0e0e0;
-  }
-  section#contact{
     border-bottom: 1px solid #e0e0e0;
     background-color: #f5f5f5;
   }

@@ -10,12 +10,9 @@
       <h1 :class="{active: setSelected === 'experience'}"><a @click="navigateTo('experience')"><i class="fa-solid fa-toolbox"></i> EXPERIENCE</a></h1>
       <h1 :class="{active: setSelected === 'projects'}"><a @click="navigateTo('projects')"><i class="fa-solid fa-diagram-project"></i> PROJECTS</a></h1>
       <h1 :class="{active: setSelected === 'skills'}"><a @click="navigateTo('skills')"><i class="fa-solid fa-code"></i> SKILLS</a></h1>
-      <h1 :class="{active: setSelected === 'courses'}"><a @click="navigateTo('courses')"><i class="fa-solid fa-book"></i> COURSES</a></h1>
-      <h1 :class="{active: setSelected === 'contact'}"><a @click="navigateTo('contact')"><i class="fa-solid fa-phone"></i> CONTACT</a></h1>
     </div>
 
-    <!-- Mobile view header content -->
-    <h1 @click="navigateTo('experience')" class="mobile-name">Jaden Nobles</h1>
+    <h1 @click="navigateTo('about')" class="mobile-name">Jaden Nobles</h1>
     <button :class="{open: menuOpen}" @click="toggleMenu">☰</button>
 
     <!-- Mobile nav -->
@@ -26,9 +23,6 @@
         <a :class="{active: setSelected === 'experience'}" @click="navigateTo('experience')"><i class="fa-solid fa-toolbox"></i> EXPERIENCE</a>
         <a :class="{active: setSelected === 'projects'}" @click="navigateTo('projects')"><i class="fa-solid fa-diagram-project"></i> PROJECTS</a>
         <a :class="{active: setSelected === 'skills'}" @click="navigateTo('skills')"><i class="fa-solid fa-code"></i> SKILLS</a>
-        <a :class="{active: setSelected === 'courses'}" @click="navigateTo('courses')"><i class="fa-solid fa-book"></i> COURSES</a>
-        <a :class="{active: setSelected === 'contact'}" @click="navigateTo('contact')"><i class="fa-solid fa-phone"></i> CONTACT</a>
-
       </div>
     </div>
   </div>

@@ -21,8 +21,10 @@
       <div class="acts">
         <h2 style="color:#1d2b9f">Courses & Activities</h2>
         <ul>
-          <li><strong>Courses:</strong> Your course list</li>
-          <li><strong>Activities:</strong> Your activities</li>
+          <li><strong>Courses:</strong> Web Security, Software Engineering, Theory of Computing, AI & Machine Learning, Computer Architecture, Data Structures
+          ,Analysis of Algorithms</li>
+          <li><strong>Activities & Awards:</strong> Association of Computing Machinery (ACM), Hack NCAT Fall 2023 Winner (Rockwell Automation), Brighthouse Financial Scholar,
+          Deans List (2021-2025)</li>
         </ul>
       </div>
     </div>

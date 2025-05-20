@@ -24,7 +24,7 @@
 
         <div class="resume-button">
           <a href="/Resume.pdf" target="_blank" class="resume">
-            <i class="fas fa-file"></i> Download Resume
+            <span id="download"><i class="fas fa-file"></i>Download Resume </span>
           </a>
         </div>
   </div>
@@ -57,20 +57,18 @@
   border:transparent;
   transition: background-color 0.3s, transform 0.2s;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-.resume{
   width: fit-content;
   height:auto;
   font-weight: 500;
   padding: 15px;
   border-radius: 15px;
-  color:white;
   background-color: #1d2b9f;
   text-align: center;
 }
 
-.resume-button i {
+.resume-button i,#download{
   padding-right: 10px;
+  color:white;
 }
 
 .icon-button {
@@ -80,6 +78,7 @@
   width: 45px;
   height: 45px;
   margin: 0 10px;
+  border: 2px solid #1d2b9f;
   border-radius: 50%;
   background-color: #f0f0f0;
   color: #333;
@@ -95,6 +94,7 @@
 
 .icon-button i {
   font-size: 18px;
+  color:#1d2b9f;
 }
 
 .socialIcons{
