@@ -42,7 +42,7 @@ export default {
           "Collaborated with teams to gather requirements and ensure alignment with business objectives. Participated in code reviews, planning sessions, standup meetings and more.",
           ], image: require("../assets/statefarm.png")
         },
-        { company: "Brighthouse Financial", name: "Data Analyst", date: "May 2023 - August 2023", location: "Remote",
+        { company: "Brighthouse Financial", name: "Data Analyst Intern", date: "May 2023 - August 2023", location: "Remote",
         description: ["Built an ad-hoc reporting system using Python and SQL to streamline actuarial data analysis and reporting processes across the team.",
           "Automated data extraction and transformation from large databases using Jupyter, Excel, and MySQL, reducing manual effort across the team.",
           "Created interpolation methods using python to produce results for analyzing risk, index values and to build more accurate reports",
